@@ -18,12 +18,12 @@
 			<div id="wrapper" class="fade-in">
 
 				<!-- Intro -->
-					<div id="intro">
+					<!-- <div id="intro">
 						<p>A showcase of my projects and abilities <a href="https://html5up.net/license">Creative Commons license</a>.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
-					</div>
+					</div> -->
 
 				<!-- Header -->
 					<header id="header">
@@ -50,44 +50,46 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<h2><a href="#">And this is a<br />
-									massive headline</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<div>
+										<span style="float:left">
+											<a href="#" class="image main"><img src="images/placido.jpg" alt="" style="border-radius: 50%; width:150px; height:150px;"  /></a>
+										</span>
+										<span style="float:right">
+											<h2><a href="#"></a>My name is Placido Hoff, and I develop software.</h2>
+											<p>Hello, I am an aspiring software developer. I enjoy working on coding projects, and please browse my through my work and feel free to give me feedback or contact me for any services.</p>
+										</span>
+									</div>
 								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
+																<ul class="actions special">
+									<!-- <li><a href="#" class="button large">Full Story</a></li> -->
 								</ul>
 							</article>
 
 						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
+							<article>
+								<header>
+									<span class="date">Phaser JS</span>
+									<h2><a href="#">SpaceFlyer<br />
+								</header>
+								<a href="https://zealous-spence-efe2ce.netlify.app/" class=""><img src="images/spaceflyer_screenshot.png" alt="" style="width: 481px; height: 463px;" /></a>
+								<p>A simple spaceship flying game where the player must avoid astroids and engage enemy ships.</p>
+								<div>
+									<!-- <span style="float: left"><a href="#">GitHub</a></span>
+									<span style="float: right"><a href="https://zealous-spence-efe2ce.netlify.app/">Live Demo</a></span> -->
+								</div>
+							</article>
+							<article>
+								<header>
+									<span class="date">Phaser JS</span>
+									<h2><a href="#">RoadRun<br />
+								</header>
+								<a href="https://elated-knuth-5910a7.netlify.app" class=""><img src="images/roadRun(1).png" alt="" /></a>
+								<p>Click the screen to avoid the obstacles!.</p>
+								<div>
+									<span style="float: left"><a href="#">GitHub</a></span>
+									<span style="float: right"><a href="https://elated-knuth-5910a7.netlify.app/">Live Demo</a></span>
+								</div>
+							</article>
 								<article>
 									<header>
 										<span class="date">April 18, 2017</span>
@@ -196,7 +198,12 @@
 
 			</div>
 
+
 		<!-- Scripts -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js" charset="utf-8"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js" charset="utf-8"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js" charset="utf-8"></script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -204,6 +211,25 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				class Quiz extends React.Component{
+					constructor(){
+						super(props);
+						this.state={
+							
+						}
+
+					}
+					render(){
+						return(
+							<></>
+						)
+					}
+				}
+
+
+			</script>
 
 	</body>
 </html>
