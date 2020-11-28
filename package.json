@@ -1,11 +1,11 @@
 {
-    "title": "Heroic Features",
-    "name": "startbootstrap-heroic-features",
+    "title": "Placido Hoff Online Portfolio",
+    "name": "Placido Hoff Online Portfolio",
     "version": "4.2.3",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "An HTML template with a hero heading and feature cards built with Bootstrap",
+    "description": "Placido Hoff Online Portfolio",
     "keywords": [
         "css",
         "sass",
@@ -22,7 +22,7 @@
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (https://davidmiller.io/)"
+        "Placido Hoff (https://placidohoff.github.io/)"
     ],
     "repository": {
         "type": "git",
