@@ -1,8 +1,190 @@
-/*!
- * Start Bootstrap - Heroic Features (https://startbootstrap.com/template/heroic-features)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-heroic-features/blob/master/LICENSE)
- */
+
 body {
   padding-top: 56px;
 }
+
+.view_item a{
+  color: #fff;
+  /* cursor: default; */
+}
+
+.view_item .built-with{
+  /* text-align: center; */
+}
+
+.view_main{
+  margin-top: 50px;
+}
+
+
+/* .list-view .view_item:last-child{
+  margin-bottom: 0;
+} */
+
+@media only screen and (min-width: 600px) {
+  .view_item img{
+    width: 205px;
+  }
+  
+  .view_main{
+    background: #fff;
+    border-radius: 3px;
+  }
+  
+  .list-view .view_item{
+    border: 1px solid #e2efe1;
+    margin: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .list-view .view_item .vi_left{
+    margin-right: 25px;
+  }
+  
+  .view_item .title{
+    font-weight: 600;
+  }
+  
+  .view_item .content{
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 200;
+  }
+  
+  .view_item .btn{
+    width: 75px;
+    background: #0096FF;
+    color: #fff;
+    border-radius: 3px;
+    padding: 8px 5px;
+    text-align: center;
+    font-weight: 200;
+    /* cursor: pointer; */
+    margin-top: 10px;
+  }
+  
+  .view_item .btn:hover{
+    background: #1F51FF;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-img-top{
+    width: 300px;
+    height: 300px;
+  }
+  .view_item img{
+    width: 205px;
+  }
+  
+  .view_main{
+    background: #fff;
+    border-radius: 3px;
+  }
+  
+  .list-view .view_item{
+    border: 1px solid #e2efe1;
+    margin: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .list-view .view_item .vi_left{
+    margin-right: 25px;
+  }
+  
+  .view_item .title{
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .view_item .content{
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 200;
+  }
+  
+  .view_item .btn{
+    width: 75px;
+    background: #0096FF;
+    color: #fff;
+    border-radius: 3px;
+    padding: 8px 5px;
+    text-align: center;
+    font-weight: 200;
+    /* cursor: pointer; */
+    margin-left: 30%;
+  }
+  
+  .view_item .btn:hover{
+    background: #1F51FF;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card-img-top{
+    width: 200px;
+    height: 200px;
+  }
+  .view_item img{
+    width: 205px;
+  }
+  
+  .view_main{
+    background: #fff;
+    border-radius: 3px;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  
+  .list-view .view_item{
+    border: 1px solid #e2efe1;
+    margin: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .list-view .view_item .vi_left{
+    margin-right: 25px;
+  }
+  
+  .view_item .title{
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .view_item .content{
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 200;
+  }
+
+  
+  
+  .view_item .btn{
+    width: 75px;
+    background: #0096FF;
+    color: #fff;
+    border-radius: 3px;
+    padding: 8px 5px;
+    text-align: center;
+    font-weight: 200;
+    /* cursor: pointer; */
+    /* margin-left: 30%; */
+  }
+  
+  .view_item .btn:hover{
+    background: #1F51FF;
+  }
+}
+
+
