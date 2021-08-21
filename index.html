@@ -58,18 +58,34 @@
 
     <!-- Jumbotron Header -->
     <header class="jumbotron my-4">
+      <div class="container">
       <!-- <h1 class="display-3"><a href="#" class="image main"><img class="img-responsive" src="images/placido.jpg" alt="" style="border-radius: 50%; width:150px; height:150px;"  /></a> -->
       <!-- </h1> -->
       <p class="lead- text-center">Greetings! My name is Placido Hoff and welcome to my portfolio of projects. Please browse through them and feel free to contact me to give feedback, for any questions you might have, or if you are interested in me joining your team. I look forward to hearing what you think. Please explore and have fun!</p>
-      <a href="#projects" class="btn btn-primary btn-lg d-flex justify-content-center">View My Projects</a>
+      <div class="d-flex justify-content-center"><a href="#projects" style="width:20vw" class="btn btn-primary btn-lg ">View My Projects</a></div>
+    </div>
     </header>
 
-    <!-- Page Features -->
+    <!-- My Projects -->
     <div class="container" >
-      <div class="view_main">
+      
           
           <div class="view_wrap list-view">
             <div class="row mt-5 d-flex justify-content-center" id="projects"><h3>My Projects</h3></div>
+              <div class="view_item">
+                 <div class="vi_left">
+                      <a href="https://rci-time-card.web.app/"><img src="/images/timecard.png"></a>
+                 </div> 
+                 <div class="vi_right">
+                     <p class="title">TimeCard Application</p>
+                     <p class="content">
+                      A full stack application where users can log in and update to their timecard during the week. At the start of the work week, the user logs in and creates a new time card and each day of the weel the user logs in and inputs the necessary data for that day. The application saves the progess to be resumed and added to and at the end of the week the user can finalize the time card to be saved in their records and now they have the option to create a new time card for the week and repeat the process. Useful to keep track of their weekly timecards online.                      <br /><br />
+                      <p class="built-with content">Built with: React.js & Firebase</p>
+  
+                     </p>
+                     <div class='btn-wrap'><div class="btn"><a href="https://rci-time-card.web.app/">Demo</a></div></div>
+                  </div>
+              </div>
               <div class="view_item">
                  <div class="vi_left">
                       <a href="https://note-taker-99fac.web.app/"><img src="/images/notetaker_screenshot2.png"></a>
@@ -176,9 +192,11 @@
             </div>
   
           </div>
-      </div>
+      
   </div>
-    <!-- /.row -->
+
+
+    <!-- Contact -->
     <div class="row d-flex justify-content-center">
       <h3>Contact Me</h3>
     </div>
