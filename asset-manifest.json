@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c58a6280.chunk.css",
+    "main.js": "/static/js/main.2c5d5aa5.chunk.js",
+    "main.js.map": "/static/js/main.2c5d5aa5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7e1166ac.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7e1166ac.js.map",
+    "static/css/2.d8c616ef.chunk.css": "/static/css/2.d8c616ef.chunk.css",
+    "static/js/2.2640cb74.chunk.js": "/static/js/2.2640cb74.chunk.js",
+    "static/js/2.2640cb74.chunk.js.map": "/static/js/2.2640cb74.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.d8c616ef.chunk.css.map": "/static/css/2.d8c616ef.chunk.css.map",
+    "static/css/main.c58a6280.chunk.css.map": "/static/css/main.c58a6280.chunk.css.map",
+    "static/js/2.2640cb74.chunk.js.LICENSE.txt": "/static/js/2.2640cb74.chunk.js.LICENSE.txt",
+    "static/media/amazon.4fb01c51.png": "/static/media/amazon.4fb01c51.png",
+    "static/media/avatar.b8b6e9fa.png": "/static/media/avatar.b8b6e9fa.png",
+    "static/media/invoiceApp.86d63f5d.png": "/static/media/invoiceApp.86d63f5d.png",
+    "static/media/messager.a2d99c3f.png": "/static/media/messager.a2d99c3f.png",
+    "static/media/notetaker.b22e0223.png": "/static/media/notetaker.b22e0223.png",
+    "static/media/scorecards.fb66975c.png": "/static/media/scorecards.fb66975c.png",
+    "static/media/spaceshooter.54384a56.png": "/static/media/spaceshooter.54384a56.png",
+    "static/media/timecard.1af26dc6.png": "/static/media/timecard.1af26dc6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7e1166ac.js",
+    "static/css/2.d8c616ef.chunk.css",
+    "static/js/2.2640cb74.chunk.js",
+    "static/css/main.c58a6280.chunk.css",
+    "static/js/main.2c5d5aa5.chunk.js"
+  ]
+}
