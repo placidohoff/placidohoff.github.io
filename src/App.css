@@ -1,0 +1,91 @@
+.mainColor{
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.bannerText{
+  background-color: black;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+  
+}
+
+.bannerText h1{
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+}
+
+.bannerText hr{
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+  color: white;
+}
+
+.page-enter{
+  opacity: 0;
+  /* transform: translateX(-100%) */
+}
+
+.page-enter-active{
+  opacity: 1;
+  /* transform: translateX(0%); */
+  transition: 300ms ease-out;
+
+}
+
+.page-exit{
+  opacity: 1;
+}
+
+.page-exit-active{
+  opacity: 0;
+  transition: 300ms ease-in;
+}
+
+textarea{
+  resize: none;
+}
+
+
+.formLabel{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.formError{
+  color: rgb(87, 8, 8);
+}
+
+.resumeMainBanner{
+  background-color: blueviolet;
+  width: 70%;
+}
+
+.centerText{
+  display: 'flex';
+  align-items: center;
+  justify-content: center;
+}
+
+.resumeBanner{
+  background-color: blueviolet;
+  color: white;
+}
+
+.navItem:hover{
+  background-color: rgb(228, 224, 217);
+  color: black;
+  
+}
+
+.navItem:hover span{
+  color: black;
+}
+
+
