@@ -1,0 +1,78 @@
+.home{
+    margin: 0 auto 0 auto;
+    width: auto;
+    height: 80vh;
+}
+
+.home__herobox{
+    width: 75vw;
+    max-width: 1200px;
+    height: auto;
+    margin: 40px auto 0 auto;
+    padding: 0px 50px 20px 50px;
+    background: #000;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.herobox_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px auto 0 auto; */
+}
+
+.herobox_head>h1{
+    font-size: 44px;
+}
+
+.herobox_head>h4{
+    margin-top: -20px;
+}
+
+.herobox_head>hr{
+    height: 3px;
+    width: 300px;
+    color: #fff;
+    background: rgba(255,255,255,0.59);
+    border-radius: 10px;
+}
+
+.herobox_icons_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.hero_icon{
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.home_action_contain{
+    display: flex;
+    flex-direction: row;
+}
+
+.home_action_bn{
+    margin: 10px auto 0 auto;
+    background-color: #1c4b74;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 300px;
+    height: 90px;
+    font-size: 24px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* font-weight: 700px; */
+}
+
+.home_action_bn:hover{
+    transform: scale(1.01);
+    background-color: #3898ec;
+}

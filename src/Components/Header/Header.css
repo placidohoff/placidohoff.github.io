@@ -1,0 +1,108 @@
+@media only screen and (max-width: 600px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px 0px 40px;
+        color: white;
+      }
+      
+      .header__left{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .header__left>h2{
+          display: none;
+      }
+      
+      .header__left_hamburger{
+        margin-right: 15px;
+        cursor: pointer;
+      }
+      
+      .header__right{
+        display: none;
+      }
+      
+  }
+
+@media only screen and (min-width: 600px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px 0px 40px;
+        color: #fff;
+      }
+      
+      .header__left{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      
+      .header__left_hamburger{
+        margin-right: 15px;
+        cursor: pointer;
+      }
+
+    .header__left>h2{
+        cursor: default;
+    }
+      
+      .header__right{
+        display: none;
+      }
+      
+  }
+
+@media only screen and (min-width: 820px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px 0px 40px;
+        color: white;
+      }
+      
+      .header__left{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      
+      .header__left_hamburger{
+        margin-right: 15px;
+        cursor: pointer;
+      }
+
+      .header__left>h2{
+        cursor: default;
+    }
+      
+      .header__right{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-evenly; */
+      }
+      
+      .header__right_navitem{
+        margin-right: 35px;
+        padding: 5px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+            
+      .header__right_navitem:hover{
+        background-color: gray;
+      }
+}
+
+
+  
+  
