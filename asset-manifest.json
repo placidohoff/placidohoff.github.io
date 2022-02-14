@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0b9ba5fb.css",
+    "main.js": "/static/js/main.dff27806.js",
+    "static/media/spaceshooter.png": "/static/media/spaceshooter.54384a56e0b460da275c.png",
+    "static/media/amazon.png": "/static/media/amazon.4fb01c517a15f387d9a3.png",
+    "static/media/invoiceApp.png": "/static/media/invoiceApp.86d63f5d712fe196b740.png",
+    "static/media/timecard.png": "/static/media/timecard.1af26dc68492bf78d85a.png",
+    "static/media/notetaker.png": "/static/media/notetaker.b22e0223f9c89a1d5e32.png",
+    "static/media/messager.png": "/static/media/messager.a2d99c3f2b99ae886543.png",
+    "static/media/scorecards.png": "/static/media/scorecards.fb66975ce6f125f562c1.png",
+    "index.html": "/index.html",
+    "main.0b9ba5fb.css.map": "/static/css/main.0b9ba5fb.css.map",
+    "main.dff27806.js.map": "/static/js/main.dff27806.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b9ba5fb.css",
+    "static/js/main.dff27806.js"
+  ]
+}
