@@ -49,7 +49,7 @@ export default function Resume() {
           <div className='resume_section_head'>Skills</div>
           <hr className='section_divider' />
         </div>
-        
+
         <div className='skills_body'>
 
           {RESUME.skills.map(skill => (<div className='skills_item'>{skill}</div>))}
@@ -83,10 +83,10 @@ export default function Resume() {
         <div className='resume_education_container'>
           {
             RESUME.education.map(school => (
-              <EducationItem 
+              <EducationItem
                 school={school}
               />
-           ))
+            ))
           }
         </div>
       </div>
@@ -132,11 +132,16 @@ function WorkHistory({ work }) {
   )
 }
 
-function EducationItem({ school }){
-  return(
+function EducationItem({ school }) {
+  return (
     <div className='education_item'>
-      <div>&bull;&nbsp;{school.school}&nbsp;({school.study})</div>
-      <div>{school.dates}</div>
+      <div><span className='education_bullet'>&bull;&nbsp;</span>
+        <span className='education_school_study'>
+          <span className='education_text'>{school.school}</span>
+          &nbsp;<span className='education_study'>({school.study})</span>
+        </span>
+      </div>
+      <div className='education_text education_dates'>{school.dates}</div>
     </div>
   )
 }

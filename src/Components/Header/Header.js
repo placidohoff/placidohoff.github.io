@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './Header.css'
+import '../Drawer/Drawer.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { GrClose } from 'react-icons/gr'
+import { AiOutlineCloseSquare } from 'react-icons/ai'
 import { useNavigate } from "react-router-dom";
 import Drawer from '../Drawer/Drawer';
 
@@ -17,12 +19,12 @@ export default function Header() {
           <div className='drawer_head'>
             <h2>Placido's Porftolio</h2>
 
-            <GrClose
+            <AiOutlineCloseSquare
               onClick={() => setOpen(false)}
-              color='white'
+              // color='white'
               fontSize='2.5em'
               className='drawer_exit'
-              style={{ background: 'white' }}
+              // style={{ color: 'white' }}
             />
 
           </div>

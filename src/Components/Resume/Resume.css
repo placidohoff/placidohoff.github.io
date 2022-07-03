@@ -1,9 +1,12 @@
 @media only screen and (max-width: 600px) {
+    .resume{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .resume_head{
         margin: 0 auto 0 auto;
         width: 100%;
         text-align: center;
-        
     }
     .resume_head_box{
         display: grid;
@@ -64,7 +67,7 @@
     
     .skills_body{
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
         margin-top: 15px;
         /* border: 1px solid  white; */
         justify-content: space-around;
@@ -121,8 +124,26 @@
         line-height: 30px;
         font-size: 18px;
     }
+
+    .education_school_study{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education_study{
+        margin: -15px 0 0 10px;
+    }
+    .education_bullet{
+        display: none;
+    }
+    
 }
 @media only screen and (min-width: 600px) {
+    .resume{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .resume_head{
         margin: 0 auto 0 auto;
         width: 100%;
@@ -249,6 +270,11 @@
 }
 
 @media only screen and (min-width: 800px) {
+    .resume{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
     .resume_head{
         margin: 0 auto 0 auto;
         width: 100%;
@@ -546,7 +572,16 @@
 
 .education_item{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5px;
-    padding: 0 40px 0 40px;
+    padding: 0 20px 0 20px;
+}
+
+.education_text{
+    font-weight: bold;
+}
+
+.education_dates{
+    text-align: end;
 }

@@ -1,10 +1,14 @@
 @media only screen and (max-width: 700px) {
     .contact{
-        padding: 10px 100px 10px 100px;
+        /* padding: 10px 100px 10px 100px; */
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
-        border: 1px solid white;
-        justify-content: space-between;
+        /* border: 1px solid white; */
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 200px;
+        /* height: 50vh; */
     }
     
     .contact_form{
@@ -13,6 +17,8 @@
         min-width: 200px;
         max-width: 600px;
         margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .contact_form_control{
@@ -58,6 +64,11 @@
         transform: scale(1.01);
         background-color: #3898ec;
     }
+
+    .contact_icons{
+        margin-left: auto;
+        margin-right: auto;
+    }
     
     .contact_icon{
         font-size: 4.5em;
@@ -71,7 +82,9 @@
         flex-direction: row;
         /* border: 1px solid white; */
         justify-content: space-between;
-        height: 75vh;
+        /* margin-bottom: 200px; */
+        margin-bottom: 190px;
+        height: 600px;
         /* margin-bottom: 250px; */
     }
     
