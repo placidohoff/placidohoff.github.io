@@ -1,17 +1,20 @@
 import React, { useState } from 'react'
 import './Projects.css'
 import { PROJECTS } from '../../data/PROJECTS'
+import FadeInSection from '../FadeInSection/FadeInSection'
 
 // const [isZoom, setIsZoom] = useState(false)
 
 export default function Projects() {
   return (
     <div className='projects'>
+      <FadeInSection as='h2' className='section_heading'>Projects</FadeInSection>
       {
-        PROJECTS.map(project => (
+        PROJECTS.map((project, index) => (
           <ListProject
-            key={Math.random()}
+            key={project.name}
             project={project}
+            delay={index * 80}
           />
         ))
       }
@@ -19,12 +22,12 @@ export default function Projects() {
   )
 }
 
-function ListProject({ project }) {
+function ListProject({ project, delay }) {
 
   const [isZoom, setIsZoom] = useState(false)
 
   return (
-    <div className='listproject'>
+    <FadeInSection className='listproject' delay={delay}>
       <div className='list_left'>
         <p className='list_left_title'>{project.name}</p>
 
@@ -60,7 +63,7 @@ function ListProject({ project }) {
         </div>
       </div>
 
-    </div>
+    </FadeInSection>
   )
 }
 
