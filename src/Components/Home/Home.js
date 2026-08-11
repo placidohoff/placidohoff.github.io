@@ -1,22 +1,20 @@
 import React from 'react'
 import './Home.css'
-import { useNavigate } from 'react-router-dom'
 import { DiReact, DiJavascript1, DiBootstrap, DiNodejs, DiMongodb, DiGit } from 'react-icons/di'
 import { FaDatabase } from 'react-icons/fa'
-import { AiFillHtml5 } from 'react-icons/ai'
 import { RiHtml5Fill } from 'react-icons/ri'
 import { FaCss3Alt } from 'react-icons/fa'
+import FadeInSection from '../FadeInSection/FadeInSection'
+import { scrollToSection } from '../../utils/scrollToSection'
 
 export default function Home() {
 
-  const navigate = useNavigate()
-
   return (
     <div className='home'>
-      <div className='home__herobox'>
+      <FadeInSection className='home__herobox'>
         <div className='herobox_head'>
           <h1>Placido Hoff</h1>
-          <h4>Web Developer</h4>
+          <h2 className='herobox_tagline'>Web Developer</h2>
           <hr />
         </div>
         <div className='herobox_icons_box'>
@@ -54,16 +52,16 @@ export default function Home() {
             style={{ fontSize: '2.5em', alignSelf: 'center' }}
           />
         </div>
-      </div>
-      <div className='home_action_contain'>
+      </FadeInSection>
+      <FadeInSection className='home_action_contain' delay={150}>
         <></>
         <div className='home_action_bn'
-          onClick={() => navigate('/projects')}
+          onClick={() => scrollToSection('projects')}
         >
           See My Projects
         </div>
         <></>
-      </div>
+      </FadeInSection>
     </div>
   )
 }

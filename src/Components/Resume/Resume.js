@@ -2,104 +2,110 @@ import React, { useState } from 'react'
 import './Resume.css'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import { RESUME } from '../../data/RESUME'
-import { Container, Row, Col } from 'react-bootstrap'
+import FadeInSection from '../FadeInSection/FadeInSection'
 
 export default function Resume() {
   return (
-    <div className='resume'>
+    <>
+      <FadeInSection as='h2' className='section_heading'>Resume</FadeInSection>
+
+      <div className='resume mt-5'>
+
+        <FadeInSection className='resume_head'>
+          <h3 className='resume_title'>{RESUME.name}</h3>
+          <div className='resume_head_box'>
+            {
+              RESUME.head.map(header => (
+                <>
+                  <div className='head_bullet'>
+                    &bull;
+                  </div>
+                  <div className='head_item'>
+                    {header}
+                  </div>
 
 
-      <div className='resume_head'>
-        <p className='resume_title'>{RESUME.name}</p>
-        <div className='resume_head_box'>
-          {
-            RESUME.head.map(header => (
-              <>
-                <div className='head_bullet'>
-                  &bull;
-                </div>
-                <div className='head_item'>
-                  {header}
-                </div>
-
-
-              </>
-            ))
-          }
-          <div className='head_bullet'>
-            &bull;
+                </>
+              ))
+            }
+            <div className='head_bullet'>
+              &bull;
+            </div>
           </div>
-        </div>
-      </div>
+        </FadeInSection>
 
-      <div className='resume_summary'>
-        <div className='summary_head_contain'>
-          <hr className='section_divider' />
-          <div className='resume_section_head'>Professional Summary</div>
-          <hr className='section_divider' />
-        </div>
-        <div className='summary_body'>
-          {RESUME.summary}
-        </div>
-      </div>
+        <FadeInSection className='resume_summary' delay={80}>
+          <div className='summary_head_contain'>
+            <hr className='section_divider' />
+            <h3 className='resume_section_head'>Professional Summary</h3>
+            <hr className='section_divider' />
+          </div>
+          <div className='summary_body'>
+            {RESUME.summary}
+          </div>
+        </FadeInSection>
 
-      <div className='resume_skills'>
-        <div className='summary_head_contain'>
-          <hr className='section_divider' />
-          <div className='resume_section_head'>Skills</div>
-          <hr className='section_divider' />
-        </div>
+        <FadeInSection className='resume_skills' delay={80}>
+          <div className='summary_head_contain'>
+            <hr className='section_divider' />
+            <h3 className='resume_section_head'>Skills</h3>
+            <hr className='section_divider' />
+          </div>
 
-        <div className='skills_body'>
+          <div className='skills_body'>
 
-          {RESUME.skills.map(skill => (<div className='skills_item'>{skill}</div>))}
+            {RESUME.skills.map(skill => (<div className='skills_item' key={skill}>{skill}</div>))}
 
-        </div>
-      </div>
+          </div>
+        </FadeInSection>
 
 
-      <div className='resume_work_history'>
-        <div className='summary_head_contain'>
-          <hr className='section_divider' />
-          <div className='resume_section_head'>Work History</div>
-          <hr className='section_divider' />
-        </div>
-        <div className=''>
-          {RESUME.workHistory.map(work => (
-            <WorkHistory
-              work={work}
-              key={Math.random()}
-            />
-          ))}
-        </div>
-      </div>
-
-      <div className='resume_education'>
-        <div className='summary_head_contain'>
-          <hr className='section_divider' />
-          <div className='resume_section_head'>Educaion</div>
-          <hr className='section_divider' />
-        </div>
-        <div className='resume_education_container'>
-          {
-            RESUME.education.map(school => (
-              <EducationItem
-                school={school}
+        <FadeInSection className='resume_work_history' delay={80}>
+          <div className='summary_head_contain'>
+            <hr className='section_divider' />
+            <h3 className='resume_section_head'>Work History</h3>
+            <hr className='section_divider' />
+          </div>
+          <div className=''>
+            {RESUME.workHistory.map((work, index) => (
+              <WorkHistory
+                work={work}
+                key={`${work.name}-${work.dates}`}
+                delay={index * 60}
               />
-            ))
-          }
-        </div>
-      </div>
+            ))}
+          </div>
+        </FadeInSection>
 
-    </div>
+        <FadeInSection className='resume_education' delay={80}>
+          <div className='summary_head_contain'>
+            <hr className='section_divider' />
+            <h3 className='resume_section_head'>Educaion</h3>
+            <hr className='section_divider' />
+          </div>
+          <div className='resume_education_container'>
+            {
+              RESUME.education.map(school => (
+                <EducationItem
+                  school={school}
+                  key={school.school}
+                />
+              ))
+            }
+          </div>
+        </FadeInSection>
+
+      </div>
+    </>
   )
 }
 
-function WorkHistory({ work }) {
+function WorkHistory({ work, delay }) {
   const [showMore, setShowMore] = useState(false)
   return (
-    <div
+    <FadeInSection
       className='work_history'
+      delay={delay}
       onClick={() => setShowMore(!showMore)}
     >
       <div className='work_history_head'>
@@ -128,7 +134,7 @@ function WorkHistory({ work }) {
 
         }
       </div>
-    </div>
+    </FadeInSection>
   )
 }
 

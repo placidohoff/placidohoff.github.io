@@ -2,14 +2,12 @@ import React, { useState } from 'react'
 import './Header.css'
 import '../Drawer/Drawer.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { GrClose } from 'react-icons/gr'
 import { AiOutlineCloseSquare } from 'react-icons/ai'
-import { useNavigate } from "react-router-dom";
 import Drawer from '../Drawer/Drawer';
+import { scrollToSection } from '../../utils/scrollToSection'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
-  const navigate = useNavigate()
 
   const ShowDrawer = () => {
     return (
@@ -30,10 +28,10 @@ export default function Header() {
           </div>
           <hr />
           <div className='drawer_nav'>
-            <p className='drawer_nav_item' onClick={() => { navigate('/'); setOpen(false) }}>Home</p>
-            <p className='drawer_nav_item' onClick={() => { navigate('/projects'); setOpen(false) }}>Projects</p>
-            <p className='drawer_nav_item' onClick={() => { navigate('/resume'); setOpen(false) }}>Resume</p>
-            <p className='drawer_nav_item' onClick={() => { navigate('/contact'); setOpen(false) }}>Contact</p>
+            <p className='drawer_nav_item' onClick={() => { scrollToSection('home'); setOpen(false) }}>Home</p>
+            <p className='drawer_nav_item' onClick={() => { scrollToSection('projects'); setOpen(false) }}>Projects</p>
+            <p className='drawer_nav_item' onClick={() => { scrollToSection('resume'); setOpen(false) }}>Resume</p>
+            <p className='drawer_nav_item' onClick={() => { scrollToSection('contact'); setOpen(false) }}>Contact</p>
           </div>
         </div>
 
@@ -58,22 +56,22 @@ export default function Header() {
         </div>
         <div className='header__right'>
           <div className='header__right_navitem'
-            onClick={() => { navigate('/') }}
+            onClick={() => { scrollToSection('home') }}
           >
             <p>Home</p>
           </div>
           <div className='header__right_navitem'
-            onClick={() => { navigate('/projects') }}
+            onClick={() => { scrollToSection('projects') }}
           >
             <p>Projects</p>
           </div>
           <div className='header__right_navitem'
-            onClick={() => { navigate('/resume') }}
+            onClick={() => { scrollToSection('resume') }}
           >
             <p>Resume</p>
           </div>
           <div className='header__right_navitem'
-            onClick={() => { navigate('/contact') }}
+            onClick={() => { scrollToSection('contact') }}
           >
             <p>Contact</p>
           </div>
