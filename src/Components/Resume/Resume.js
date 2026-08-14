@@ -104,7 +104,7 @@ function WorkHistory({ work, delay }) {
   const [showMore, setShowMore] = useState(false)
   return (
     <FadeInSection
-      className='work_history'
+      className={`work_history${work.current ? ' work_history_current' : ''}`}
       delay={delay}
       onClick={() => setShowMore(!showMore)}
     >
@@ -114,26 +114,18 @@ function WorkHistory({ work, delay }) {
           <p className='work_head_position'>{work.position}&nbsp;({work.name})</p><p>{work.dates}</p>
         </div>
       </div>
-      <div className='work_history_body'>
-        {
-          showMore ?
-            <>
-              {
-                work.roles.map(role => (
-                  <div className='work_body_role'>
-                    <div>&bull; &nbsp;</div><div>{role}</div>
-                  </div>
-                ))
-              }
-              <p style={{ marginTop: '20px' }}>Click to minimize...</p>
-            </>
-
-
-            :
-            <p>Click to see more details...</p>
-
-        }
+      <div className={`work_history_roles${showMore ? ' is-open' : ''}`}>
+        <div className='work_history_roles_inner'>
+          {
+            work.roles.map((role, index) => (
+              <div className='work_body_role' key={index}>
+                <div>&bull; &nbsp;</div><div>{role}</div>
+              </div>
+            ))
+          }
+        </div>
       </div>
+      <p className='work_history_toggle'>{showMore ? 'Click to minimize...' : 'Click to see more details...'}</p>
     </FadeInSection>
   )
 }
