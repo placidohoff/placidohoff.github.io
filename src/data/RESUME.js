@@ -1,52 +1,86 @@
 export const RESUME = {
     name: 'Placido Hoff',
     head: [
-        '84 Wesleyan Ave, Providence, RI',
-        'placido.hoff@gmail.com',
-        'github.com/placidohoff',
-        '401-405-6301'
+        'Providence, RI',
+        'placidohoff.developer@gmail.com',
+        'linkedin.com/in/placidohoff',
+        '(401) 405-6301'
     ],
-    summary: `Full-stack (MERN) software developer who solves problems and brings ideas to life. Hard-working agile 
-    developer capable in both the frontend and backend and is currently looking to contribute to and create software 
-    applications for clients to help companies, development teams, and myself in growth`,
+    summary: `Software developer with over three years of professional experience designing, developing, and
+    maintaining web applications in a production environment. Experienced in delivering secure, accessible, and
+    maintainable solutions within a government environment while collaborating with cross-functional teams to meet
+    business objectives. With Army National Guard IT experience, I bring a disciplined work ethic, strong
+    problem-solving abilities, and a commitment to continuous learning to your development team.`,
     skills: [
-        `React`,
-        `Redux`,
-        `React Native`,
-        `Next.js`,
+        `C#`,
+        `JavaScript`,
+        `Java`,
+        `Python`,
+        `TypeScript`,
+        `React.js`,
         `Node.js`,
         `Express`,
-        `JavaScript`,
-        `TypeScript`,
+        `ASP.NET MVC`,
         `Bootstrap`,
-        `RESTful API`,
-        `GraphQL`,
-        `MySQL`,
-        `Heroku`,
-        `MongoDB`,
-        `Firebase`,
-        `Docker`,
+        `OWASP`,
+        `Apex`,
+        `WCAG Web Accessibility`,
         `Git`,
+        `Visual Studio`,
+        `Asana`,
+        `Team Foundation Server`,
+        `Azure`,
+        `Windows Server`,
+        `SQL Server`,
+        `MongoDB`,
+        `Salesforce`,
+        `Swagger (RESTful APIs)`,
     ],
     workHistory: [
+        {
+            name: `Army National Guard`,
+            position: `Information Technology Specialist - Sergeant`,
+            dates: `April 2024 - Current`,
+            location: `Providence, RI`,
+            current: true,
+            roles: [
+                `Providing help desk support such as resolving user issues with hardware, software, and connectivity.`,
+                `Conducting informational briefings and hands-on training for tech related equipment for other service members to uphold the readiness of the unit.`,
+                `Loading encryption keys into network devices to ensure secure communication during field operations.`,
+                `Documenting, tracking, and maintaining sensitive inventory for before and after operational field use.`,
+            ]
+        },
+        {
+            name: `Rhode Island Department of State`,
+            position: `Front-end Web Developer`,
+            dates: `June 2022 - Current`,
+            location: `Providence, RI`,
+            current: true,
+            roles: [
+                `Rebuilt the organization's main website from an outdated PHP framework to ASP.NET MVC to improve security and maintainability.`,
+                `Adhering to design documentation from various departments to implement frequent and timely website updates.`,
+                `Implementing (WCAG) web accessibility standards to ensure inclusive user experiences.`,
+                `Mitigating web application security vulnerabilities based on monthly security reports from CISA.`,
+            ]
+        },
         {
             name: `Minority Programmer's Association`,
             position: `React JS Intern`,
             dates: `09/2021 - 12/2021`,
             location: `Remote`,
             roles: [
-                `Attended weekly scrum meetings where projects were discussed and broken down into tasks to be executed in 
+                `Attended weekly scrum meetings where projects were discussed and broken down into tasks to be executed in
                 weekly sprints.
                 `,
-                ` Tasked with creating re-usable React components styled with SCSS, CSS, and bootstrap according to the 
+                ` Tasked with creating re-usable React components styled with SCSS, CSS, and bootstrap according to the
                 designated mock-up.
                 `,
                 ` Implemented Redux and Context API to design patterns maintain state data throughout the website.`,
                 ` Developed various screens for the front end using React JS and routing using the react-router-dom library.`,
                 ` Implemented secured HTTP requests with JWT and authorization middleware’s to prevent security threats`,
-                `Developed CSS styles to preserve the uniformity of all the screens throughout the application and 
+                `Developed CSS styles to preserve the uniformity of all the screens throughout the application and
                 positioning of screen objects`,
-                `Developed responsive applications using Bootstrap which allowed the same application to be optimized for both 
+                `Developed responsive applications using Bootstrap which allowed the same application to be optimized for both
                 mobile and desktop resolutions.`
             ]
         },
@@ -56,72 +90,67 @@ export const RESUME = {
             dates: `03/2020 - 07/2021`,
             location: `Providence, RI`,
             roles: [
-                ` Redesigned the company’s website to be built with React class components and functional components along with 
+                ` Redesigned the company’s website to be built with React class components and functional components along with
                 bootstrap layout.
                 `,
-                ` Developed full stack applications to help with business administration and book keeping using Mongo, Express, 
+                ` Developed full stack applications to help with business administration and book keeping using Mongo, Express,
                 React, and Node.js
                 `,
                 ` Implemented Redux to dispatch changes to global data that would be saved to the backend using fetchAPI`,
                 ` Used node.js and Mongoose to interact with RESTful services and interacting with MongoDB Database.
                 `,
-                ` Ensured secured routing using the react-router-dom library in conjunction with JWT authorization middleware’s to 
+                ` Ensured secured routing using the react-router-dom library in conjunction with JWT authorization middleware’s to
                 prevent security threats`,
-                `CSS styles were developed to preserve the uniformity of all the screens throughout the application and positioning 
+                `CSS styles were developed to preserve the uniformity of all the screens throughout the application and positioning
                 of screen objects.`,
 
             ]
         },
         {
-            name: `CareerDevs`,
-            position: `Frontend Development Instructor`,
-            dates: `05/2018 - 12/2020`,
+            name: `Careerdevs Coding Bootcamp`,
+            position: `Coding Instructor`,
+            dates: `October 2019 - May 2020`,
             location: `Providence, RI`,
             roles: [
-                ` Instructed and guided cohorts on how to design and code front ends for applications and websites using JavaScript, CSS, and the Bootstrap Framework.
-                `,
-                ` Developed lesson plans based on the industry best practices
-                `,
-                ` Used Object Oriented Programming concepts to develop UI components that could be reused across Web Applications`,
-                ` Served as a scrum leader and participated in scrum meetings weekly using agile methodology to develop and oversee development of website features and applications.
-                `,
-
+                `Taught foundational programming using JavaScript, Node.js, HTML, and CSS.`,
+                `Mentored students in debugging, project-based learning, and Agile collaboration.`,
             ]
         },
         {
-            name: `Rhode Island Army National Guard`,
-            position: `Vertical Engineer`,
-            dates: `04/2018 - Ongoing`,
+            name: `Army National Guard`,
+            position: `Carpentry/Masonry Specialist`,
+            dates: `April 2018 - March 2024`,
             location: `East Greenwich, RI`,
             roles: [
-                ` Participating in construction projects locally and abroad
-                `,
-                ` Responding to COVID relief missions as requested by doing actions including but not limited to physical COVID 
-                testing, preparing and delivering the necessary supplies needed to COVID testing sites, and ensuring COVID safety protocols are followed.      
-                `,
-                ` Leading and communicating with other soldiers to complete objectives`,
-                ` Maintaining my own and helping fellow soldiers keep their physical fitness up to the standards.
-                `,
-                `Responding to natural disaster emergencies as needed such as hurricanes, snowstorms, floods, and any other emergency where the national guard may be called in.`
-
+                `Applied technical precision and attention to detail as a member of a team to complete construction projects locally and abroad.`,
             ]
         },
     ],
     education: [
         {
+            school: `Rhode Island College`,
+            study: `B.A. Computer Science (Major), Cyber Security (Minor)`,
+            dates: `2026 - Currently Enrolled`
+        },
+        {
             school: `Community College of Rhode Island`,
-            study: `Majoring in Computer Information Studies`,
-            dates: `2021 - Now`
+            study: `A.S. Computer Science`,
+            dates: `Completed 2025`
+        },
+        {
+            school: `CompTIA`,
+            study: `Security+ Certification`,
+            dates: `Obtained 2025`
         },
         {
             school: `NuCamp Coding Bootcamp`,
             study: `Full-Stack Web Development Certficate`,
-            dates: `2021 - 2022`
+            dates: `Obtained 2022`
         },
         {
             school: `NuCamp Coding Bootcamp`,
             study: `Front-end Web and Mobile Development Certificate`,
-            dates: `2020 - 2021`
+            dates: `Obtained 2022`
         },
         {
             school: `Classical High School`,

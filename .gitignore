@@ -25,3 +25,6 @@ yarn-error.log*
 # local notes, not part of the site
 /context/
 .claude/
+
+# personal source documents, not meant to ship
+/src/data/*.pdf
