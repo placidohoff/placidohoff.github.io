@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Projects.css'
 import { PROJECTS } from '../../data/PROJECTS'
 import FadeInSection from '../FadeInSection/FadeInSection'
-
-// const [isZoom, setIsZoom] = useState(false)
 
 export default function Projects() {
   return (
@@ -24,8 +22,6 @@ export default function Projects() {
 
 function ListProject({ project, delay }) {
 
-  const [isZoom, setIsZoom] = useState(false)
-
   return (
     <FadeInSection className='listproject' delay={delay}>
       <div className='list_left'>
@@ -35,17 +31,7 @@ function ListProject({ project, delay }) {
           className='list_left_img'
           src={project.image}
           alt={project.name}
-          onClick={() => setIsZoom(true)}
         />
-        {
-          isZoom &&
-          <img
-            className='img_zoom'
-            src={project.image}
-            alt={project.name}
-            onClick={() => setIsZoom(false)}
-          />
-        }
       </div>
       <div className='list_right'>
         <p className='list_right_title'>{project.name}</p>
