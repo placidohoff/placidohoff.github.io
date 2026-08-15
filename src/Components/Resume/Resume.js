@@ -139,6 +139,7 @@ function EducationItem({ school }) {
           &nbsp;<span className='education_study'>({school.study})</span>
         </span>
       </div>
+      <span className='education_dots' aria-hidden='true'></span>
       <div className='education_text education_dates'>{school.dates}</div>
     </div>
   )
