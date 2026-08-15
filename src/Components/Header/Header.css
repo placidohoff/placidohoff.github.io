@@ -22,19 +22,15 @@
         justify-content: space-evenly;
       }
 
-      .header__left>h2{
-          display: none;
-      }
-      
       .header__left_hamburger{
         margin-right: 15px;
         cursor: pointer;
       }
-      
+
       .header__right{
         display: none;
       }
-      
+
   }
 
 @media only screen and (min-width: 600px) {
@@ -54,18 +50,17 @@
       }
       
       .header__left_hamburger{
-        margin-right: 15px;
-        cursor: pointer;
+        display: none;
       }
 
     .header__left>h2{
         cursor: default;
     }
-      
+
       .header__right{
         display: none;
       }
-      
+
   }
 
 @media only screen and (min-width: 820px) {

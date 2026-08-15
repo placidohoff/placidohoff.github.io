@@ -9,8 +9,8 @@ import { scrollToSection } from '../../utils/scrollToSection'
 export default function Header() {
   const [open, setOpen] = useState(false)
 
-  const ShowDrawer = () => {
-    return (
+  return (
+    <>
       <Drawer isOpen={open} onClose={() => setOpen(false)}>
 
         <div>
@@ -36,12 +36,6 @@ export default function Header() {
         </div>
 
       </Drawer>
-    )
-  }
-
-  return (
-    <>
-      <ShowDrawer />
       <div className='header'>
 
 

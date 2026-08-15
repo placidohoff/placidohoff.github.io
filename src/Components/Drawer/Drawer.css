@@ -1,6 +1,6 @@
 .drawer-container {
-    --transition-speed: 0.9s;
-    transition-duration: 0.9s;
+    --transition-speed: 0.3s;
+    transition-duration: 0.3s;
 }
 
 .drawer {
@@ -24,8 +24,6 @@
 }
 
 .drawer-container.open .left{
-    transition-duration: 2s;
-    /* transition: 900ms ease-out; */
     transform: translateX(0);
 }
 
