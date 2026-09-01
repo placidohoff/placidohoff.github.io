@@ -5,15 +5,33 @@ import invoiceImage from '../Assets/invoiceApp.png'
 import scorecardsImage from '../Assets/scorecards.png'
 import messagerImage from '../Assets/messager.png'
 import amazonImage from '../Assets/amazon.png'
+import squareDeli from '../Assets/square-deli-admin.png'
 
 
 export const PROJECTS = [
+    {
+        name: 'Deli Menu',
+        description: 'Square Deli Grill — a full-stack restaurant menu platform (React + Node/Express/Postgres) that doubles as live digital signage, powering two in-store TV menu boards, with a password-protected admin panel for real-time menu management. ',
+        image: squareDeli,
+        link: 'https://square-deli.onrender.com/',
+        technologies: ['React', 'Bootstrap', 'Node.js', 'Express', 'Prisma', 'PostgreSQL', 'JWT']
+    },
     {
         name: 'Time-Card Application',
         description: 'A full stack application where users can log in and update to their timecard during the week. At the start of the work week, the user logs in and creates a new time card and each day of the weel the user logs in and inputs the necessary data for that day. The application saves the progess to be resumed and added to and at the end of the week the user can finalize the time card to be saved in their records and now they have the option to create a new time card for the week and repeat the process. Useful to keep track of their weekly timecards online',
         builtWith: 'Built with: React.js & Firebase',
         image: timecardImage,
-        link: 'https://rci-time-card.web.app/'
+        link: 'https://rci-time-card.web.app/',
+        
+
+    },
+    {
+        name: 'Fight Scorecards Application',
+        description: `A full-stack web application that lets users score boxing matches round-by-round, the way an official ringside judge would, and compare their scorecards against other users' for the same fight.`,
+        builtWith: 'Built with: React.js & Firebase',
+        image: scorecardsImage,
+        link: 'https://scorecard-test-92e55.web.app/newfight',
+        technologies: ['React', 'TypeScript', 'Bootstrap', 'ASP.NET Core', 'Entity Framework Core', 'Swagger', 'SQL Server', 'JWT']
     },
     {
         name: 'Note-Taking Application',
@@ -35,13 +53,6 @@ export const PROJECTS = [
         builtWith: 'Built with: React.js & Firebase',
         image: invoiceImage,
         link: 'https://rcielectric-be3e6.web.app/sample'
-    },
-    {
-        name: 'Fight Scorecards Application',
-        description: `This app allows fans to make a scorecard to score a fight round by round as they are watching live. Aside from just scores, notes can also be annotated for each round. Scorecards are saved to a database allowing users to retrieve the previous scorecards and notes that they might want to view at a future time perhaps to compare with others.`,
-        builtWith: 'Built with: React.js & Firebase',
-        image: scorecardsImage,
-        link: 'https://scorecard-test-92e55.web.app/newfight'
     },
     {
         name: 'Group Message App',
