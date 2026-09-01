@@ -53,6 +53,36 @@
     color: #fff;
 }
 
+.hero_icon_wrap{
+    position: relative;
+    display: inline-flex;
+    cursor: default;
+}
+
+.hero_icon_tooltip{
+    position: absolute;
+    bottom: 115%;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: #0f2027;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.hero_icon_wrap:hover .hero_icon_tooltip{
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
 .home_action_contain{
     display: flex;
     flex-direction: row;

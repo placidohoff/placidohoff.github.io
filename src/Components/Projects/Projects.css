@@ -96,7 +96,7 @@
     }
 
     .list_left_img:hover{
-        transform: scale(1.7);
+        transform: scale(2.5);
     }
 
     .list_left_title{
@@ -151,6 +151,49 @@
 .list_left_img{
     position: relative;
     transition: transform 0.3s ease-out;
+}
+
+.list_left_img:hover{
+    z-index: 20;
+}
+
+.tech_icon_row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 12px;
+}
+
+.tech_icon{
+    position: relative;
+    display: inline-flex;
+    font-size: 1.6em;
+    color: #fff;
+    cursor: default;
+}
+
+.tech_icon_tooltip{
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: #0f2027;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.tech_icon:hover .tech_icon_tooltip{
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
 .list_button_contain{

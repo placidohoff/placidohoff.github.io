@@ -2,6 +2,7 @@ import React from 'react'
 import './Projects.css'
 import { PROJECTS } from '../../data/PROJECTS'
 import FadeInSection from '../FadeInSection/FadeInSection'
+import { TECH_ICONS, DEFAULT_TECH_ICON } from './techIcons'
 
 export default function Projects() {
   return (
@@ -36,6 +37,22 @@ function ListProject({ project, delay }) {
       <div className='list_right'>
         <p className='list_right_title'>{project.name}</p>
         <p className='list_right_description'>{project.description}</p>
+        {
+          project.technologies &&
+          <div className='tech_icon_row'>
+            {
+              project.technologies.map(tech => {
+                const Icon = TECH_ICONS[tech] || DEFAULT_TECH_ICON
+                return (
+                  <span className='tech_icon' key={tech} title={tech}>
+                    <Icon />
+                    <span className='tech_icon_tooltip'>{tech}</span>
+                  </span>
+                )
+              })
+            }
+          </div>
+        }
         <div className='list_button_contain'>
           <div className='button_video list_button'>
             Video Example
